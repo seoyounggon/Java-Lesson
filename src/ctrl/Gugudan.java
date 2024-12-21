@@ -1,3 +1,5 @@
+package ctrl;
+
 public class Gugudan {
     public static void main(String[] args) {
 
@@ -10,6 +12,7 @@ public class Gugudan {
                 System.out.printf("%d X %d = %d\n",dan, i, dan * i);
                 i += 1;
             }
+            System.out.println();
 
             dan+=1;
         }
