@@ -8,9 +8,9 @@ public class Person {
 
 
     //데이터
-    protected int age; //나이 데이터(속성, attribute, property, member variable)
-    protected String name; // 이름 데이터
-    protected float height;  // 키 데이터
+    private int age; //나이 데이터(속성, attribute, property, member variable)
+    private String name; // 이름 데이터
+    private float height ;  // 키 데이터
 
     //생성자: 클래스명과 같음, 객체기 생성될 때 한번 호출됨.
     public Person(String n, float h, int a) {
@@ -18,7 +18,7 @@ public class Person {
         name=n;
         height=h;
 
-        System.out.println("Person 클래스로부터 생성됨");
+        System.out.println("Person 클래스로부터 객체가 생성됨");
     }
 
     //행위(Method, Member function)
@@ -26,5 +26,7 @@ public class Person {
         System.out.println("안녕하세요, 저는 "+ name + "이고, ");
         System.out.println("나이는 "+ age + "살 입니다.");
     }
+
+
 
 }
