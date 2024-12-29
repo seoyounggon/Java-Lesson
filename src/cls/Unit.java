@@ -66,15 +66,15 @@ public class Unit {
         }
     }
 
-    public void attack(Unit target) {
-        target.hp -= this.power;
+    public void damage(int power) {
+        hp -= power;
+        System.out.printf("%s의 hp : %d\n",name,hp);
     }
 
-
-
-
-
-
-
+    public void attack(Unit target) {
+        target.damage(power);
+        System.out.printf("%s가 %s를 공격함\n",this.name,target.getName());
+    }
 
 }
+
